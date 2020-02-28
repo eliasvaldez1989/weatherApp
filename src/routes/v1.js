@@ -13,4 +13,8 @@ router.get('/current', async (req, res) => {
     res.send(await Weather.getCurrentCityWeather());
 });
 
+router.get('/forecast', async (req, res) => {
+    res.send(await Weather.getFiveDayCurrentCityWeather());
+});
+
 module.exports = router;

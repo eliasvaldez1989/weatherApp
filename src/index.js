@@ -2,7 +2,7 @@
 
 const express = require('express');
 const app = express();
-const v1 = require('./routes/v1')
+const v1 = require('./routes/v1');
 
 app.use('/v1', v1);
 app.listen(3000);
