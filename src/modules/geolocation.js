@@ -9,7 +9,7 @@ class Geolocation {
         return Utilities.getRequest(ipApiUrl);
     }
 
-    static getCitiesLocation(city) {
+    static getCityLocation(city) {
         const cityUrl = encodeURIComponent(city);
         const mapBoxurl = `https://api.mapbox.com/geocoding/v5/mapbox.places/${cityUrl}.json?access_token=pk.eyJ1IjoiZWxpYXN2YWxkZXoiLCJhIjoiY2s3NHc2Z3MyMDIweDNmcDh5NnV4MmJ5byJ9.FOlYAE94Nm1WFioDnFF1vg`;
         return Utilities.getRequest(mapBoxurl);
